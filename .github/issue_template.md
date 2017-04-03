@@ -58,10 +58,11 @@ If you have access to your command line run e.g.:
 sudo -u www-data php occ config:list system
 from within your ownCloud installation folder
 
-or 
-
-Insert your config.php content here
-(ATTENTION: WITHOUT the database password, passwordsalt and secret !!!)
+*ATTENTION:* Do not post your config.php to us or in public as is. Please use the above shown 
+occ config:list command whenever possible. It takes care of removing all sensitive data. 
+If you cannot use occ config:list then it is critical for your own privacy to dilligently
+remove *all* host names, passwords, usernames, salts and other credentials before posting.
+You should assume that attackers find such information and will use them against your systems.
 ```
 
 **Are you using external storage, if yes which one:** local/smb/sftp/...
